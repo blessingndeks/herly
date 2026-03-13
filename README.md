@@ -51,9 +51,9 @@ herly-landing/
 ├─ images/
 │   ├─ hero-image.jpg       # Hero section main image
 │   ├─ overlay.jpg          # Hero section overlay effect
-│   ├─ lunch.jpg            # Scene image
-│   ├─ event.jpg            # Scene image
-│   └─ chat.jpg             # Scene image
+│   ├─ whisper.jpg            # Scene image
+│   ├─ trust.jpg            # Scene image
+│   └─ accountability.jpg             # Scene image
 └─ README.md                # Project documentation
 
 ## Installation & Usage

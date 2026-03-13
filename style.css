@@ -30,6 +30,7 @@ body {
     font-weight: 300;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    margin-left: 40px;
 }
 
 
@@ -37,7 +38,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 40px;
     right: 0;
     z-index: 100;
     padding: 20px 52px;
@@ -102,9 +103,6 @@ nav {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background:
-        radial-gradient(ellipse 700px 500px at 10% 30%, rgba(109, 40, 217, 0.1) 0%, transparent 60%),
-        radial-gradient(ellipse 500px 400px at 90% 70%, rgba(192, 57, 43, 0.06) 0%, transparent 60%);
 }
 
 .hero-grid {
@@ -438,8 +436,8 @@ nav {
 }
 
 .scene-tag {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 700;
     letter-spacing: .16em;
     text-transform: uppercase;
     color: var(--purple);
@@ -447,21 +445,11 @@ nav {
     margin-left: 8px;
 }
 
-.scene-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--cream);
-    margin-bottom: 6px;
-    letter-spacing: -.01em;
-    margin-left: 8px;
-}
-
 .scene-desc {
-    font-size: 12.5px;
-    color: var(--cream-60);
+    font-size: 14px;
+    color: var(--cream);
     line-height: 1.65;
-    margin-left: 8px;
+    margin: 8px;
 }
 
 /* GATEKEEP */
@@ -532,8 +520,12 @@ nav {
 /* FINAL CTA */
 .final {
     background: var(--purple);
-    padding: 110px 52px;
+    padding: 100px 52px;
+    border-radius: 24px;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
     position: relative;
     overflow: hidden;
 }
@@ -675,7 +667,7 @@ nav {
 
 /* FOOTER */
 footer {
-    padding: 28px 52px;
+    padding: 28px 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -810,9 +802,22 @@ footer {
         max-height: none;
     }
 
+    .stats {
+        margin-right: 60px;
+    }
+
+    .stat {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
+    .body {
+        margin-left: -30px;
+        margin-right: 30px;
+    }
 
     /* HERO */
     .hero {
@@ -828,10 +833,11 @@ footer {
     }
 
     .waitlist-form input {
-        width: 600px;
+        width: 300px;
         max-width: none;
         font-size: 24px;
-        margin-bottom: 17px;
+        display: block;
+        margin-bottom: 20px;
     }
 
     .waitlist-form button {
@@ -937,6 +943,10 @@ footer {
     }
 
     /* FINAL CTA */
+    /* .final {
+        margin-top: -100px;
+    } */
+
     .final-e {
         margin-top: -50px;
         font-size: 14px;
@@ -954,10 +964,10 @@ footer {
     }
 
     .final-form input {
-        width: 600px;
+        width: 300px;
         max-width: none;
         font-size: 24px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .final-form button {
@@ -1005,19 +1015,22 @@ footer {
 
     /* WAITLIST FORM */
     .waitlist-form {
+        display: flex;
+        justify-items: center;
+        align-items: center;
         flex-direction: column;
         width: 100%;
         gap: 12px;
     }
 
     .waitlist-form input {
-        width: 100%;
+        width: 70%;
         font-size: 16px;
         padding: 12px 16px;
     }
 
     .waitlist-form button {
-        width: 100%;
+        width: 70%;
         font-size: 16px;
     }
 
@@ -1103,9 +1116,7 @@ footer {
     }
 
     /* FINAL CTA */
-    .final {
-        padding: 80px 18px;
-    }
+   
 
     .final-h {
         font-size: 36px;

@@ -33,6 +33,12 @@ function showMessage(el, text, type = "error") {
     el.classList.remove("show", "error", "success");
     void el.offsetWidth;
     el.classList.add("show", type);
+
+    clearTimeout(el._hideTimer);
+    el._hideTimer = setTimeout(() => {
+        el.classList.remove("show", "error", "success");
+        el.textContent = "";
+    }, 3000);
 }
 
 function hideMessages(...els) {
