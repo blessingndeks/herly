@@ -58,7 +58,7 @@ herly-landing/
 
 ## Installation & Usage
 - Clone the repository
-git clone https://github.com/blessingndeks/herly-landing-page.git
+git clone https://github.com/blessingndeks/herly.git
 
 ** Open index.html in your browser:
 ** No server required for basic HTML/CSS/JS functionality.
